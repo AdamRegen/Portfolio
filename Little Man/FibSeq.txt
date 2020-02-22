@@ -1,0 +1,27 @@
+INP
+STA Fibseq
+
+Loop LDA Fibseq
+SUB one
+STA Fibseq
+LDA b
+STA temp
+ADD a
+STA b
+LDA temp
+STA a
+LDA Fibseq
+
+BRZ end
+BRA Loop
+
+
+end LDA a
+OUT 
+HLT
+
+a DAT 1
+b DAT 1
+temp DAT 
+Fibseq DAT
+one DAT 1

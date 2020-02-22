@@ -1,0 +1,23 @@
+INP
+STA number1
+INP
+STA number2
+
+Loop LDA ans
+ADD number1
+STA ans
+LDA number2
+SUB one
+STA number2
+
+BRZ end
+BRA Loop
+
+end LDA ans
+OUT
+HLT
+
+one DAT 1
+number2 DAT 
+number1 DAT
+ans DAT

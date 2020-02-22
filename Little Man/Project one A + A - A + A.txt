@@ -1,0 +1,19 @@
+INP
+ADD ans
+STA ans
+INP
+ADD ans
+STA ans
+INP
+STA min
+LDA ans
+SUB min
+STA ans
+INP
+ADD ans
+
+OUT
+HLT
+
+ans DAT 0
+min DAT 

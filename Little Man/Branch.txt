@@ -1,0 +1,15 @@
+INP 
+STA a
+INP
+STA b
+SUB a 
+BRP bgrta
+LDA a
+OUT 
+HLT
+
+bgrta LDA b
+OUT
+HLT
+a DAT
+b DAT
